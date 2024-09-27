@@ -1,0 +1,7 @@
+.idea
+__pycache__
+
+
+pytest/base/.idea
+pytest/base/__pycache__
+pytest/base/.venv
