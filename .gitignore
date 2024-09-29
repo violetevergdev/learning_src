@@ -1,7 +1,5 @@
-.idea
-__pycache__
+**/.idea/
+**/__pycache__/
 
+**/venv/
 
-pytest/base/.idea
-pytest/base/__pycache__
-pytest/base/.venv
