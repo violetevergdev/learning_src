@@ -1,8 +1,21 @@
 {% extends 'main/layout.html' %}
 
-{% block title %}Главная страница{% endblock %}
+{% block title %}{{ title }}{% endblock %}
 
 {% block content %}
-<h1>Главная страница</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci, aspernatur debitis delectus eius ex libero maxime necessitatibus omnis sit? Accusamus ad consequatur dicta laudantium neque provident sunt totam vitae!</p>
+    <div class="features">
+        <h1>{{ title }}</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, dignissimos distinctio dolor dolores ea eveniet harum magnam neque nesciunt nulla officia provident quas recusandae repellat reprehenderit repudiandae saepe velit veritatis?</p>
+        <button class="btn btn-warning">На страницу про нас</button>
+
+        {% for v in values %}
+            {% if v == 'warm' %}
+                <p>{{ v|upper }}</p>
+            {% endif %}
+        {% endfor %}
+
+        {% for v in obj %}
+            <p>{{ v }}</p>
+        {% endfor %}
+    </div>
 {% endblock %}
