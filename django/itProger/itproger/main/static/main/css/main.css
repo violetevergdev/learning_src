@@ -67,10 +67,6 @@ main .features p {
     margin: 20px auto;
 }
 
-/*.alert {*/
-/*    position: relative;*/
-/*    left: 30px;*/
-/*}*/
 
 .alert-warning {
     float: left;
@@ -78,4 +74,10 @@ main .features p {
     width: 400px;
     margin: 20px 34%;
     text-align: left;
+}
+
+form {
+    margin-left: 32%;
+    width: 500px;
+    margin-top: 50px;
 }
